@@ -7,13 +7,13 @@ workflow "local repo test" {
 }
 
 action "Cat hello" {
-  uses = "cab105/aktion-test/hello-repo/images@dev"
+  uses = "cab105/aktion-test/hello-repo/images@hello-repo"
   runs = "cat"
   args = "/hello.txt"
 }
 
 action "Echo hello" {
-  uses = "cab105/aktion-test/hello-repo/images@dev"
+  uses = "cab105/aktion-test/hello-repo/images@hello-repo"
   runs = "echo"
   args = "Hello from Aktion"
 }
